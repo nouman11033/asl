@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Sign Language Detection</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black; /* Set the background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        h1, p, img {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .footer {
+            color: red;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Real-Time Sign Language Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <p>This is a real-time sign language detection system. The video stream is processed to recognize sign language gestures.</p>
+
+    <div class="footer">Presented By: Nouman Jinabade 21070127032</div>
+    <div class="footer">              Aaditya Ahire 21070122001</div>
+    <div class="footer">              Dimple Mehta 210701220045</div>
+    <div class="footer">              Rika Mallika 2107013062</div>
+</body>
+</html>
